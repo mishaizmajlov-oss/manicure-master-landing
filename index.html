@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Мастер маникюра — создание записи</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Мастер маникюра — дизайн, покрытие, наращивание. Запись онлайн.">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner container">
+      <div class="hero-left">
+        <h1>Мастер маникюра<br><span class="accent">покрытие, дизайн, наращивание</span></h1>
+        <p class="lead">Профессиональные услуги маникюра в уютной студии. Гигиенично, безопасно, красиво. Есть запись онлайн и выезд на дом.</p>
+        <div class="features">
+          <div class="feat">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M6 2h9a1 1 0 0 1 1 1v14h-2V4H6V2z" fill="currentColor"/></svg>
+            <div>Индивидуальный дизайн</div>
+          </div>
+          <div class="feat">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M5 3h14v18H5z" fill="currentColor"/></svg>
+            <div>Гипоаллергенные материалы</div>
+          </div>
+          <div class="feat">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4 2 7L12 16l-6.5 4 2-7L2 9h7z" fill="currentColor"/></svg>
+            <div>Запись онлайн</div>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn primary" href="#contact">Записаться</a>
+          <a class="btn ghost" href="#prices">Прайс</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- laptop mock -->
+        <div class="mockup">
+          <svg class="phone" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" y="20" rx="12" ry="12" width="560" height="360" fill="#fff"/>
+            <rect x="60" y="60" width="220" height="120" fill="#f4e9ff"/>
+            <rect x="300" y="60" width="200" height="120" fill="#f7dff9"/>
+            <rect x="60" y="200" width="440" height="120" fill="#f5f6fb"/>
+            <rect x="420" y="260" width="120" height="36" rx="8" fill="#7b3bff"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="prices" class="section">
+      <h2>Услуги и цены</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Маникюр + покрытие</h3>
+          <p class="price">от 1 200 ₽</p>
+          <p>Комбинированный маникюр, стойкое покрытие гель-лак.</p>
+        </div>
+        <div class="card">
+          <h3>Дизайн ногтей</h3>
+          <p class="price">от 400 ₽</p>
+          <p>Френч, градиент, ручная роспись и инкрустации.</p>
+        </div>
+        <div class="card">
+          <h3>Наращивание</h3>
+          <p class="price">от 2 500 ₽</p>
+          <p>Наращивание гелем или акрилом, коррекция.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section highlight">
+      <h2>Почему выбирают меня</h2>
+      <ul class="bullets">
+        <li>Профессиональная стерилизация инструментов</li>
+        <li>Индивидуальные консультации по форме и цвету</li>
+        <li>Гарантия стойкости покрытия — 2 недели</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Записаться онлайн</h2>
+      <form id="leadForm" action="https://formspree.io/f/https://formspree.io/f/xjkajpkg" method="POST" class="form">
+        <label>Имя<input type="text" name="name" required></label>
+        <label>Телефон<input type="tel" name="phone" required></label>
+        <label>Услуга
+          <select name="service">
+            <option>Маникюр + покрытие</option>
+            <option>Дизайн</option>
+            <option>Наращивание</option>
+            <option>Выезд на дом</option>
+          </select>
+        </label>
+        <button class="btn primary" type="submit">Отправить заявку</button>
+        <p class="small">Или позвоните: <a href="tel:+71234567890">+7 (123) 456-78-90</a></p>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <p>© Мастер маникюра — Запись онлайн • г. Ваш город</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
